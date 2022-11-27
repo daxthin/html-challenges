@@ -41,11 +41,6 @@ main {
     box-sizing: border-box;
 }
 
-.img-wrapper img {
-    width: 150px;
-    border-radius: 100px;
-}
-
 .bio-name {
     font-family: 'Roboto Mono';
     text-align: center;
@@ -63,18 +58,6 @@ main {
     font-size: 1em;
     box-sizing: border-box;
     gap: 1em;
-}
-
-.button:nth-child(1) {
-    background: #d5e6ff;
-}
-
-.button:visited:nth-child(1) {
-    color: #0053cc;
-}
-
-.button:visited {
-    color: #e14400;
 }
 
 .button {
@@ -98,6 +81,23 @@ main {
     color: #e14400;
 }
 
+.img-wrapper img {
+    width: 150px;
+    border-radius: 100px;
+}
+
+.button.main {
+    background: #d5e6ff;
+}
+
+.button:visited {
+    color: #e14400;
+}
+
+.button.main:visited {
+    color: #0053cc;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background: #272727;
@@ -110,17 +110,7 @@ main {
     .bio-name {
         color: #fff;
     }
-    
-    .button:visited:nth-child(1) {
-        color: #000000;
-        background: #FFC700;
-        border: 1px #FFC700 solid;
-    }
-    
-    .button:visited {
-        color: #fff;
-    }
-    
+     
     .button {
         background: #272727;
         border: 1px #fff solid;
@@ -128,6 +118,15 @@ main {
     
     .fa-brands {
         color: #FFC700;
+    }    
+  
+    .button:visited {
+        color: #fff;
     }
-    
+
+    .button.main:visited {
+        color: #000000;
+        background: #FFC700;
+        border: 1px #FFC700 solid;
+    }
 }
