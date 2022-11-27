@@ -5,6 +5,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Roboto Mono';
+    src: local('Helvetica Neue Bold'), local('HelveticaNeue-Bold'),
+        url('/fonts/RobotoMono.ttf');
+    font-weight: normal;
+}
+
 body,
 html {
     height: 100vh;
@@ -40,15 +47,14 @@ main {
 }
 
 .bio-name {
-    font-family: 'Roboto Regular';
+    font-family: 'Roboto Mono';
     text-align: center;
 }
 
 .bio-desc {
     text-align: center;
-    font-family: 'Roboto Regular';
+    font-family: 'Roboto Mono';
     font-size: 1em;
-    letter-spacing: 2px;
 }
 
 .links {
@@ -90,4 +96,38 @@ main {
 .fa-brands {
     transform: scale(1.4);
     color: #e14400;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #272727;
+    }
+    
+    .bio-desc {
+        color: #fff;
+    }
+    
+    .bio-name {
+        color: #fff;
+    }
+    
+    .button:visited:nth-child(1) {
+        color: #000000;
+        background: #FFC700;
+        border: 1px #FFC700 solid;
+    }
+    
+    .button:visited {
+        color: #fff;
+    }
+    
+    .button {
+        background: #272727;
+        border: 1px #fff solid;
+    }
+    
+    .fa-brands {
+        color: #FFC700;
+    }
+    
 }
